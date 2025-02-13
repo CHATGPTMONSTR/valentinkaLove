@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ff0000, #ff7373);
+    transform: rotate(-45deg);
+    animation: beat 1s infinite;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ff0000, #ff7373);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+}
+.home_button {
+    font-size: 30px;
+    background-color: #000000; /* Черный фон */
+    color: #ff0000; /* Красный текст */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+#home_button_text {
+    color: #ff0000; /* Красный текст */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+.home_button_container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

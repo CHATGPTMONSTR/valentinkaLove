@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valentinka.css">
+    <link rel="stylesheet" href="fontello.css">
+</head>
+<body>
+    <div class="centered-text">
+        <b class="pozdravlenie">С ДНЕМ СВЯТОГО ВАЛЕНТИНА</b>
+        <br> <b class="CAT">ЛЮБЛЮ ТЕБЯ, КОТИК</b>
+        <i class="icon-emo-devil"></i>
+    </div>
+       
+    <div class="I_want_to_remind_you_that">
+        <button class="I_want_to_remind_you_thatOPEN">
+            <b>Хочу напомнить тебе что ты ...</b> 
+        </button>
+        <div class="modal I_want_to_remind_you_that_modal">
+            <div class="modal_content">
+                <span class="close close_I_want_to_remind_you_that"></span>
+                <div id="congratulations-container"></div>
+                <button class="close_modal_button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <div class="my_heart_beats_like_that">
+        <button class="my_heart_beats_like_that_button">
+            <a href="heart.html" id="my_heart_beats_like_that_text">При виде тебя мое сердце так бьется...</a>
+        </button>
+    </div>
+    <div class="Flowers_for_you">
+        <button class="Flowers_for_you_button">
+            <a href="flowers.html" id="Flowers_for_you_button_text">Цветы для тебя</a>
+        </button>
+    </div>
+    
+    <div class="video_container">
+        <button class="show_video_button">Мне в тебе так нравиться...</button>
+        <div id="video" class="video-fullscreen" style="display: none;">
+            <iframe id="video_iframe" width="100%" height="100%" src="https://www.youtube.com/embed/3_38dmu_NRw?autoplay=1&modestbranding=1&showinfo=0&controls=0&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
+    <script src="valentinka.js"></script>
+</body>
+</html>

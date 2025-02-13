@@ -1,0 +1,107 @@
+body {
+    background-image: url(https://www.zastavki.com/pictures/originals/2014/Holidays___Saint_Valentines_Day_Heart_on_the_wall_on_Valentine_s_Day_February_14_061375_.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.centered-text {
+    text-align: center;
+}
+
+.pozdravlenie, .CAT {
+    font-size: 70px;
+    color: black;
+}
+.icon-emo-devil {
+    font-size: 60px;
+}
+#I_want_to_remind_you_thatButton, .Flowers_for_you_button, .home_button, .show_video_button {
+    font-size: 30px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.I_want_to_remind_you_thatOPEN, .my_heart_beats_like_that_button, .Flowers_for_you_button, .home_button, .show_video_button {
+    font-size: 30px;
+    background-color: #000000; /* Черный фон */
+    color: #ff0000; /* Красный текст */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-align: center;
+}
+.modal_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal_content p {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.close_modal_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#my_heart_beats_like_that_text, #Flowers_for_you_button_text, #home_button_text {
+    color: #ff0000; /* Красный текст */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+.home_button_container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.video_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.video-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+}
